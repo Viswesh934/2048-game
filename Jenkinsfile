@@ -11,7 +11,7 @@ pipeline {
         stage('Cloning Git Repo') {
             steps {
                 script {
-                    sh 'https://github.com/Viswesh934/2048-game.git'
+                    sh 'git clone https://github.com/gyanavardhana/hva-coursepage.git'
                 }
             }
         }
@@ -27,7 +27,7 @@ pipeline {
         stage('Moving Files') {
             steps {
                 script {
-                    sh 'sudo cp -r 2048-game/* /var/www/html'
+                    sh 'sudo cp -r hva-coursepage/* /var/www/html'
                 }
             }
         }
